@@ -5,8 +5,8 @@ class CreateProjects < ActiveRecord::Migration[6.0]
       t.string :name
       t.text :description
       t.text :github_url
-      t.boolean :deployed
-      t.text :url
+      t.boolean :deployed, default: false
+      t.text :url, default: nil
 
       t.timestamps
     end
