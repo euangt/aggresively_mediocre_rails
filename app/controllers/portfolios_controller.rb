@@ -7,6 +7,17 @@ class PortfoliosController < ApplicationController
   def show
   end
 
+  def new
+    @portfolio = Portfolio.new
+  end
+
+  def save
+    @portfolio.user = current_user
+    if @portfolio.save!
+      redirect_to portfolio_path
+    end
+  end
+
   private 
 
   def find_portfolio
