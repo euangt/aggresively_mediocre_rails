@@ -5,5 +5,5 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
 
   has_many :portfolios
-  has_many :projects, through: :portfolio
+  has_many :projects, through: :portfolios
 end
