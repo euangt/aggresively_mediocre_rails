@@ -12,10 +12,12 @@ class PortfoliosController < ApplicationController
     @portfolio = Portfolio.new
   end
 
-  def save
+  def create
     @portfolio.user = current_user
     if @portfolio.save!
       redirect_to portfolio_path
+    else 
+      render :new
     end
   end
 
@@ -24,4 +26,5 @@ class PortfoliosController < ApplicationController
   def find_portfolio
     @portfolio = Portfolio.find(params[:id])
   end
+
 end
