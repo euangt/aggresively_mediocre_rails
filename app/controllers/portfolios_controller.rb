@@ -2,6 +2,7 @@ class PortfoliosController < ApplicationController
   before_action :find_portfolio, only: [ :show ]
   
   def index 
+    @portfolios = Portfolio.all
   end
 
   def show
