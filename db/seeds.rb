@@ -15,14 +15,14 @@ portfolio3 = Portfolio.create!(user: user3)
 portfolio4 = Portfolio.create!(user: user4)
 
 puts "Seeding Projects"
-project1 = Project.create!(portfolio: portfolio1, name: "Ilia's Project 1", description: "lorem ipsum", github_url: "https://github.com/euangt/aggresively_mediocre_rails", user: user1)
-project2 = Project.create!(portfolio: portfolio1, name: "Ilia's Project 2", description: "lorem ipsum", github_url: "https://github.com/euangt/aggresively_mediocre_rails", user: user1)
+project1 = Project.create!(portfolio: portfolio1, name: "Ilia's Project 1", description: "lorem ipsum", github_url: "https://github.com/euangt/aggresively_mediocre_rails")
+project2 = Project.create!(portfolio: portfolio1, name: "Ilia's Project 2", description: "lorem ipsum", github_url: "https://github.com/euangt/aggresively_mediocre_rails")
 
-project3 = Project.create!(portfolio: portfolio2, name: "Euan's Awesome Project 1", description: "lorem ipsum", github_url: "https://github.com/euangt/aggresively_mediocre_rails", user: user2)
-project4 = Project.create!(portfolio: portfolio2, name: "Euan's Awesome Project 2", description: "lorem ipsum", github_url: "https://github.com/euangt/aggresively_mediocre_rails", user: user2)
+project3 = Project.create!(portfolio: portfolio2, name: "Euan's Awesome Project 1", description: "lorem ipsum", github_url: "https://github.com/euangt/aggresively_mediocre_rails")
+project4 = Project.create!(portfolio: portfolio2, name: "Euan's Awesome Project 2", description: "lorem ipsum", github_url: "https://github.com/euangt/aggresively_mediocre_rails")
 
-project5 = Project.create!(portfolio: portfolio3, name: "Test's Project 1", description: "lorem ipsum", github_url: "https://github.com/euangt/aggresively_mediocre_rails", user: user3)
-project6 = Project.create!(portfolio: portfolio3, name: "Test's Project 2", description: "lorem ipsum", github_url: "https://github.com/euangt/aggresively_mediocre_rails", user: user3)
+project5 = Project.create!(portfolio: portfolio3, name: "Test's Project 1", description: "lorem ipsum", github_url: "https://github.com/euangt/aggresively_mediocre_rails")
+project6 = Project.create!(portfolio: portfolio3, name: "Test's Project 2", description: "lorem ipsum", github_url: "https://github.com/euangt/aggresively_mediocre_rails")
 
-project7 = Project.create!(portfolio: portfolio4, name: "Testy's Project 1", description: "lorem ipsum", github_url: "https://github.com/Testygt/aggresively_mediocre_rails", user: user4)
-project8 = Project.create!(portfolio: portfolio4, name: "Euan's Project 2", description: "lorem ipsum", github_url: "https://github.com/euangt/aggresively_mediocre_rails", user: user4)
+project7 = Project.create!(portfolio: portfolio4, name: "Testy's Project 1", description: "lorem ipsum", github_url: "https://github.com/Testygt/aggresively_mediocre_rails")
+project8 = Project.create!(portfolio: portfolio4, name: "Euan's Project 2", description: "lorem ipsum", github_url: "https://github.com/euangt/aggresively_mediocre_rails")
